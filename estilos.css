@@ -1,0 +1,78 @@
+/* Estilo geral para containers */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #19e273;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 1, 1, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para cabeçalhos h2 */
+  h2 {
+    color: #007bff; /* Azul */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para formulários */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para botões */
+  .btn-primary {
+    background-color: #ff0000; /* Vermelho */
+    border-color: #007bff; /* Azul */
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    border-color: #0056b3; /* Azul mais escuro */
+  }
+  
+  /* Estilo para tabelas */
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #0080ff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #007bff; /* Azul */
+    color: #ffffff;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 0, 0, 0.05); /* Azul claro */
+  }
+  
+  /* Estilo para inputs de busca */
+  .form-control.mb-2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para links */
+  a {
+    color: #ff0000; /* Azul */
+  }
+  
+  a:hover {
+    color: #1b0ceb; /* Azul mais escuro */
+  }
+  

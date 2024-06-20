@@ -1,0 +1,115 @@
+<!-- Cadastro de Livro -->
+<div class="container">
+    <h2>Cadastro de Livro</h2>
+    <form id="formLivro">
+        <div class="form-group">
+            <label for="tituloLivro">Título do Livro:</label>
+            <input type="text" class="form-control" id="tituloLivro" name="tituloLivro" required>
+        </div>
+        <div class="form-group">
+            <label for="autorLivro">Autor:</label>
+            <input type="text" class="form-control" id="autorLivro" name="autorLivro" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Livro</button>
+    </form>
+</div>
+<!-- Cadastro de Aluno -->
+<div class="container">
+    <h2>Cadastro de Aluno</h2>
+    <form id="formAluno">
+        <div class="form-group">
+            <label for="nomeAluno">Nome:</label>
+            <input type="text" class="form-control" id="nomeAluno" name="nomeAluno" required>
+        </div>
+        <div class="form-group">
+            <label for="matriculaAluno">Matrícula:</label>
+            <input type="text" class="form-control" id="matriculaAluno" name="matriculaAluno" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Aluno</button>
+    </form>
+</div>
+<!-- Cadastro de Locação de Livro -->
+<div class="container">
+    <h2>Cadastro de Locação de Livro</h2>
+    <form id="formLocacao">
+        <div class="form-group">
+            <label for="alunoLocacao">Aluno:</label>
+            <select class="form-control" id="alunoLocacao" name="alunoLocacao" required>
+                <!-- Opções de alunos vêm da lista de alunos cadastrados -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="livroLocacao">Livro:</label>
+            <select class="form-control" id="livroLocacao" name="livroLocacao" required>
+                <!-- Opções de livros vêm da lista de livros cadastrados -->
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar Locação</button>
+    </form>
+</div>
+<!-- Lista de Livros com Busca -->
+<div class="container">
+    <h2>Lista de Livros</h2>
+    <input type="text" id="buscaLivros" class="form-control mb-2" placeholder="Buscar livros...">
+    <table id="tabelaLivros" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas da tabela preenchidas dinamicamente com JavaScript -->
+        </tbody>
+    </table>
+</div>
+<!-- Lista de Alunos com Busca -->
+<div class="container">
+    <h2>Lista de Alunos</h2>
+    <input type="text" id="buscaAlunos" class="form-control mb-2" placeholder="Buscar alunos...">
+    <table id="tabelaAlunos" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas da tabela preenchidas dinamicamente com JavaScript -->
+        </tbody>
+    </table>
+</div>
+<!-- Lista de Locações com Busca -->
+<div class="container">
+    <h2>Lista de Locações</h2>
+    <input type="text" id="buscaLocacoes" class="form-control mb-2" placeholder="Buscar locações...">
+    <table id="tabelaLocacoes" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Livro</th>
+                <th>Data de Locação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas da tabela preenchidas dinamicamente com JavaScript -->
+        </tbody>
+    </table>
+</div>
+<head>
+        <meta charset="UTF-8">
+        <title>Estilos para Sistema de Biblioteca</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<head>
